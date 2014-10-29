@@ -1,0 +1,11 @@
+{
+    "applications": {
+        "Sample": {
+            "applicationId": "mr2tH58Z8CfHb30VfInRDfGY49FBqLoDNKLuQhVf", 
+            "masterKey": "apwkKhhDXDHHqB3RmnvTGa6cLSNCRrMOji4BCkRJ"
+        }, 
+        "_default": {
+            "link": "Sample"
+        }
+    }
+}
