@@ -39,7 +39,7 @@ $(function() {
 	    // the collection variable to convert this.collection into JSON
 	    // and render it with the template while assigning it to this.$el
 	    render: function(){ 
-	        var collection = { portfolio: this.collection.toJSON() };
+	        var collection = { portfolios: this.collection.toJSON() };
 	        this.$el.html(this.template(collection));
 	    }
 	});
