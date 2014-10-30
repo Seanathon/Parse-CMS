@@ -1,4 +1,4 @@
-See the Parse CMS demo here: http://seanathon.github.io/DMM-CloudCode/public
+See the Parse CMS demo here: http://seanathon.github.io/Parse-CMS/public
 
 Technology used
 ---
