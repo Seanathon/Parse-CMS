@@ -21,7 +21,7 @@ $(function() {
 	    success: function(portfolio) {
 	    	// Upon fetch success callback, create a new instance of BlogsView
 	    	// render that new instance and put it in the main-container on the page
-	        var portfolioView = new PortfolioView({ collection: portfolioItems });
+	        var portfolioView = new PortfolioView({ collection: PortfolioItems });
 		    portfolioView.render();
 		    $('.main-container').html(portfolioView.el);
 	    },
