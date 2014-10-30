@@ -18,11 +18,12 @@ $(function() {
 
 	// Festching and logging Blog table into console with no specifications
 	blogs.fetch({
-    success: function(blogs) {
-        console.log(blogs);
-    },
-    error: function(blogs, error) {
-        console.log(error);
-    }
-    
+	    success: function(blogs) {
+	        console.log(blogs);
+	    },
+	    error: function(blogs, error) {
+	        console.log(error);
+	    }
+	});
+
 });
