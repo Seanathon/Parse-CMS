@@ -14,18 +14,18 @@ $(function() {
 	});
 
 	// Creating new instance of Blogs collection
-	var portfolio = new PortfolioItems();
+	var portfolioItems = new PortfolioItems();
 
 	// Festching and logging Blog table into console with no specifications
-	portfolio.fetch({
-	    success: function(portfolio) {
+	portfolioItems.fetch({
+	    success: function(portfolioItems) {
 	    	// Upon fetch success callback, create a new instance of BlogsView
 	    	// render that new instance and put it in the main-container on the page
-	        var portfolioView = new PortfolioView({ collection: PortfolioItems });
-		    portfolioView.render();
-		    $('.main-container').html(portfolioView.el);
+	        var portfolioItemsView = new PortfolioView({ collection: portfolioItems });
+		    portfolioItemsView.render();
+		    $('.main-container').html(portfolioItemsView.el);
 	    },
-	    error: function(portfolio, error) {
+	    error: function(portfolioItems, error) {
 	        console.log(error);
 	    }
 	});
@@ -39,7 +39,7 @@ $(function() {
 	    // the collection variable to convert this.collection into JSON
 	    // and render it with the template while assigning it to this.$el
 	    render: function(){ 
-	        var collection = { portfolios: this.collection.toJSON() };
+	        var collection = { portfolio: this.collection.toJSON() };
 	        this.$el.html(this.template(collection));
 	    }
 	});
