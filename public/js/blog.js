@@ -21,6 +21,7 @@ $(function() {
 	    success: function(blogs) {
 	    	// Upon fetch success callback, create a new instance of BlogsView
 	    	// render that new instance and put it in the main-container on the page
+	        console.log(blogs);
 	        var blogsView = new BlogsView({ collection: blogs });
 		    blogsView.render();
 		    $('.main-container').html(blogsView.el);
