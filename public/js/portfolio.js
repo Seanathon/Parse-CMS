@@ -18,22 +18,22 @@ $(function() {
 
 	// Festching and logging Blog table into console with no specifications
 	portfolio.fetch({
-	    success: function(blogs) {
+	    success: function(portfolio) {
 	    	// Upon fetch success callback, create a new instance of BlogsView
 	    	// render that new instance and put it in the main-container on the page
 	        var portfolioView = new PortfolioView({ collection: portfolioItems });
 		    portfolioView.render();
 		    $('.main-container').html(portfolioView.el);
 	    },
-	    error: function(blogs, error) {
+	    error: function(portfolio, error) {
 	        console.log(error);
 	    }
 	});
 
-	// render blogs on page using handlebars blog template
+	// render portfolio on page using handlebars blog template
 	var PortfolioView =  Parse.View.extend({
 		// extend the Parse.View and use the template variable key
-		// to use Handlebars to compile our blogs template to HTML
+		// to use Handlebars to compile our portfolio template to HTML
 	    template: Handlebars.compile($('#portfolio-tpl').html()),
 	    // then use the render function key to get the data in
 	    // the collection variable to convert this.collection into JSON
