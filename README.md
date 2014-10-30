@@ -9,7 +9,7 @@ Technology used
 * handlebars.js (view API calls)
 * jQuery
 
-To see actual blog, visit http://seanyalda.com
+To see my actual blog, visit http://seanyalda.com
 
 Pharaphrasing *Robert Bringhurst*:
 
