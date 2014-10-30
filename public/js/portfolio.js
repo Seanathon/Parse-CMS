@@ -17,7 +17,7 @@ $(function() {
 	var portfolio = new PortfolioItems();
 
 	// Festching and logging Blog table into console with no specifications
-	blogs.fetch({
+	portfolio.fetch({
 	    success: function(blogs) {
 	    	// Upon fetch success callback, create a new instance of BlogsView
 	    	// render that new instance and put it in the main-container on the page
