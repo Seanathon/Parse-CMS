@@ -115,12 +115,12 @@
 
     <!-- Blogs Template Handlebars.js -->
     <script id="blogs-tpl" type="text/x-handlebars-template">
-    // Take in an array of objects and render them one by one
+    <!-- Take in an array of objects and render them one by one -->
       {{#each blog}}
         <div class="blog-post">
             <h2 class="blog-post-title"><a href="#">{{title}}</a></h2>
             <p class="blog-post-meta">At time by an author</p>
-            // Triple stash for content so HTML syntax still works
+            <!-- Triple stash for content so HTML syntax still works -->
             <div>{{{content}}}</div>
         </div>
       {{/each}}
